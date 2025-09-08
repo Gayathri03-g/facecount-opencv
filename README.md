@@ -18,5 +18,24 @@ The system displays bounding boxes on detected faces and shows the total count b
 - Python **3.10 or 3.11** (⚠️ `dlib` doesn’t support 3.12+)  
 - Install dependencies:
 
+🚀 Usage
+Run the script:
 ```bash
-pip install opencv-python dlib numpy
+python face_counter.py
+---------------------------------
+Webcam will open and detect faces
+Count updates every 3s (in console + video feed)
+Press q to quit
+
+⚙️ Config (inside code)
+``python
+FRAME_SCALE = 0.5     # Resize frame for speed
+FPS_LIMIT = 10        # Max frames per second
+UPDATE_INTERVAL = 3   # Update count every 3 sec
+
+
+📊 Example Console Output
+
+Updated Face Count: 2
+Updated Face Count: 4
+Updated Face Count: 3
